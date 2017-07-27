@@ -26,12 +26,19 @@ describe('Bubble Sort', function(){
   });
   it('swaps correct number of times', function(){
     bubbleSort(arr);
-    expect( window.swap.calls.count()).toEqual(9);
+    expect( window.swap.calls.count()).toEqual(7);
   });
   it('compares correct number of times', function(){
     bubbleSort(arr);
     expect( window.aIsGreaterThanB.calls.count() ).toEqual(10);
   });
+  it('sorts the array', function(){
+    expect( bubbleSort(arr) ).toEqual( [3,4,5,6,8] );
+  });
+  it('tests for exact # of pass', function(){
+    bubbleSort([1,2,3,5,4]);
+    expect( window.aIsGreaterThanB.calls.count() ).toEqual( 7 );
+  }); 
   // it('does not make another pass if array is already sorted', function(){
   //   expect( bubbleSort(arr)).toEqual;
   // });
