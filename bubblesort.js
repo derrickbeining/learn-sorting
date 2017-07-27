@@ -10,28 +10,15 @@ function bubbleSort(arr) {
                 }
             }
         }
-    
     }
     return arr;
 }
-
-// const count = {
-//   swap: function(arr, i, j) {
-//     const a = arr[i];
-//     arr[j] = a;
-//     arr[i] = arr[j];
-//   },
-//   aIsGreaterThanB: function(a,b) {
-//     return a > b;
-//   }
-// };
 
 function swap(arr, current, next) {
   debugger;
   let a = arr[current];
   arr[current] = arr[next];
   arr[next] = a;
-  
 }
 
 function aIsGreaterThanB(a,b) {
